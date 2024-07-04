@@ -255,19 +255,5 @@ app.get('/combined-statistics', async (req, res) => {
         res.status(500).send(error);
     }
 });
-
-
-app.get('/callme', (req,res)=>{
-    res.json("hello world")
-});
-
-
-
-// Start the server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
-
-const take = 0;
-console.log(+take)
-
-console.log('hello')
